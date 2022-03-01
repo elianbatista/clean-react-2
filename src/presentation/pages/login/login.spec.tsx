@@ -4,8 +4,8 @@ import { render, RenderResult, fireEvent, cleanup } from '@testing-library/react
 import { ValidationStub } from '@/presentation/test'
 import { Authentication, AuthenticationParams } from '@/domain/usecases'
 import { AccountModel } from '@/domain/models'
-import Login from './login'
 import { mockAccountModel } from '@/domain/test'
+import Login from './login'
 
 class AuthenticationSpy implements Authentication {
   account = mockAccountModel()

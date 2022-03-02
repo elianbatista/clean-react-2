@@ -1,6 +1,6 @@
 import React from 'react'
 import faker from 'faker'
-import Login from './login'
+import { Login } from '@/presentation/pages'
 import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
 import { render, RenderResult, fireEvent, cleanup, waitFor } from '@testing-library/react'

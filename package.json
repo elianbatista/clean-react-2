@@ -1,6 +1,6 @@
 {
   "name": "clean-react-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJs Rest API using TDD, Clean Archicture and Typescript",
   "author": "Elian Batista",
   "main": "index.js",

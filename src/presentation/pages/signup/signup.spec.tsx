@@ -37,7 +37,8 @@ const makeSut = (params?: SutParams): SutTypes => {
   )
   return {
     sut,
-    addAccountSpy
+    addAccountSpy,
+    saveAccessTokenMock
   }
 }
 
@@ -172,7 +173,7 @@ describe('SignUp Component', () => {
   test('Should call SaveAcessToken on success', async () => {
     const { sut, addAccountSpy, saveAccessTokenMock } = makeSut()
     await simulateValidSubmit(sut)
-    expect(saveAccessTokenMock.accessToken).toBe(addAccountSpy.account)
+    expect(saveAccessTokenMock.accessToken).toBe(addAccountSpy.account.accessToken)
     expect(history.length).toBe(1)
     expect(history.location.pathname).toBe('/')
   })
